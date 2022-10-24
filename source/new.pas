@@ -29,11 +29,18 @@ uses
 
 
 type
+
+  { TNewForm }
+
   TNewForm = class(TForm)
     CloseButton: TButton;
+    ShowFormButton: TButton;
+    ShowModalFormButton: TButton;
 
     procedure CloseButtonClick(Sender: TObject);
     procedure FormDeactivate(Sender: TObject);
+    procedure ShowFormButtonClick(Sender: TObject);
+    procedure ShowModalFormButtonClick(Sender: TObject);
   private
   public
   end;
@@ -44,6 +51,10 @@ var
 
 
 implementation
+
+
+uses
+  New2;
 
 
 {$IFDEF LCL}
@@ -63,6 +74,19 @@ procedure TNewForm.FormDeactivate(Sender: TObject);
 begin
   if Showing then
     SetFocus;
+end;
+
+
+procedure TNewForm.ShowFormButtonClick(Sender: TObject);
+begin
+  New2Form.Show;
+end;
+
+
+procedure TNewForm.ShowModalFormButtonClick(Sender: TObject);
+begin
+  if not New2Form.Showing then
+    New2Form.ShowModal;
 end;
 
 
