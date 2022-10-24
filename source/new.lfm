@@ -6,7 +6,8 @@ object NewForm: TNewForm
   Caption = 'New'
   ClientHeight = 240
   ClientWidth = 320
-  OnDeactivate = FormDeactivate
+  PopupMode = pmExplicit
+  PopupParent = MainForm.Owner
   LCLVersion = '2.2.4.0'
   object CloseButton: TButton
     Left = 224

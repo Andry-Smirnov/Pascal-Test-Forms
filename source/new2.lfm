@@ -7,7 +7,8 @@ object New2Form: TNew2Form
   Caption = 'New2'
   ClientHeight = 240
   ClientWidth = 320
-  OnDeactivate = FormDeactivate
+  FormStyle = fsStayOnTop
+  PopupMode = pmAuto
   LCLVersion = '2.2.4.0'
   object CloseButton: TButton
     Left = 232
