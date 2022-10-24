@@ -12,8 +12,9 @@ object NewForm: TNewForm
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  PopupMode = pmExplicit
+  PopupParent = MainForm.Owner
   Position = poDefault
-  OnDeactivate = FormDeactivate
   DesignSize = (
     320
     240)

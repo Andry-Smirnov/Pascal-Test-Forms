@@ -11,11 +11,12 @@ object New2Form: TNew2Form
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  FormStyle = fsStayOnTop
   OldCreateOrder = False
+  PopupMode = pmAuto
   DesignSize = (
-    461
-    309)
-  OnDeactivate = FormDeactivate
+    320
+    240)
   PixelsPerInch = 96
   TextHeight = 13
   object CloseButton: TButton
