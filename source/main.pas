@@ -41,9 +41,9 @@ type
   TMainForm = class(TForm)
     ShowFormButton: TButton;
     ExitButton: TButton;
-    ShowFormButton1: TButton;
-    ShowModalFormButton: TButton;
     ShowModalButton: TButton;
+    ShowModalFormButton: TButton;
+    ShowFormButton1: TButton;
     ShowModalFormButton1: TButton;
 
     procedure ExitButtonClick(Sender: TObject);
