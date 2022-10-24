@@ -22,16 +22,12 @@ Set HISTORY_FOLDER=%SOURCE_FOLDER%\__history
 Echo [3mClear folders...[0m
 
 Del /S /Q /F %BIN_FOLDER% > %LOG_FILE%
-RmDir /S /Q %BIN_FOLDER% >> %LOG_FILE%
 
 Del /S /Q /F %LIB_FOLDER% >> %LOG_FILE%
-RmDir /S /Q %LIB_FOLDER% >> %LOG_FILE%
 
 Del /S /Q /F %BACKUP_FOLDER% >> %LOG_FILE%
-RmDir /S /Q %BACKUP_FOLDER% >> %LOG_FILE%
 
 Del /S /Q /F %HISTORY_FOLDER% >> %LOG_FILE%
-RmDir /S /Q %HISTORY_FOLDER% >> %LOG_FILE%
 
 
 Rem Clear source folder
