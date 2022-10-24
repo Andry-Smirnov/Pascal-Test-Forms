@@ -3,8 +3,8 @@ object New2Form: TNew2Form
   Top = 0
   BorderStyle = bsDialog
   Caption = 'New2'
-  ClientHeight = 309
-  ClientWidth = 461
+  ClientHeight = 240
+  ClientWidth = 320
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,8 +19,8 @@ object New2Form: TNew2Form
   PixelsPerInch = 96
   TextHeight = 13
   object CloseButton: TButton
-    Left = 200
-    Top = 168
+    Left = 232
+    Top = 200
     Width = 75
     Height = 25
     Anchors = [akRight, akBottom]
