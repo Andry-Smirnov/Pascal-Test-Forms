@@ -1,0 +1,21 @@
+object New2Form: TNew2Form
+  Left = 425
+  Height = 240
+  Top = 245
+  Width = 320
+  Anchors = [akRight, akBottom]
+  Caption = 'New2'
+  ClientHeight = 240
+  ClientWidth = 320
+  OnDeactivate = FormDeactivate
+  LCLVersion = '2.2.4.0'
+  object CloseButton: TButton
+    Left = 232
+    Height = 25
+    Top = 200
+    Width = 75
+    Caption = 'Close'
+    OnClick = CloseButtonClick
+    TabOrder = 0
+  end
+end

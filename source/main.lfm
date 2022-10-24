@@ -1,0 +1,61 @@
+object MainForm: TMainForm
+  Left = 641
+  Height = 328
+  Top = 171
+  Width = 479
+  BorderStyle = bsDialog
+  Caption = 'Main'
+  ClientHeight = 328
+  ClientWidth = 479
+  LCLVersion = '2.2.4.0'
+  object ExitButton: TButton
+    Left = 384
+    Height = 25
+    Top = 288
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Exit'
+    OnClick = ExitButtonClick
+    TabOrder = 0
+  end
+  object ShowFormButton: TButton
+    Left = 272
+    Height = 25
+    Top = 256
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Show'
+    OnClick = ShowFormButtonClick
+    TabOrder = 1
+  end
+  object ShowModalFormButton: TButton
+    Left = 160
+    Height = 25
+    Top = 256
+    Width = 91
+    Anchors = [akRight, akBottom]
+    Caption = 'Show Modal'
+    OnClick = ShowModalFormButtonClick
+    TabOrder = 2
+  end
+  object ShowFormButton1: TButton
+    Left = 272
+    Height = 25
+    Top = 288
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Show 2'
+    OnClick = ShowFormButton1Click
+    TabOrder = 3
+  end
+  object ShowModalFormButton1: TButton
+    Left = 160
+    Height = 25
+    Top = 288
+    Width = 91
+    Anchors = [akRight, akBottom]
+    Caption = 'Show Modal 2'
+    OnClick = ShowModalFormButton1Click
+    TabOrder = 4
+  end
+end
