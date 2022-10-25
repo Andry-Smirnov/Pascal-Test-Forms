@@ -74,5 +74,4 @@ backup
 bin
 lib
 .vscode
-source/*.lps
-source/TestForms.lps
+*.lps
