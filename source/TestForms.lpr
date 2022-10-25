@@ -1,3 +1,9 @@
+{:
+  @author(Andry Smirnov)
+  @abstract(Test form app)
+  @created(22.10.2022)
+  @modified(25.10.2022 by Andry Smirnov)
+}
 program TestForms;
 
 
@@ -12,9 +18,10 @@ uses
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms,
-  Main, 
-  New,
-  New2
+
+  Main, {MainForm}
+  New,  {NewForm}
+  New2  {New2Form}
   { you can add units after this };
 
 
