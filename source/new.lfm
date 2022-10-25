@@ -1,7 +1,7 @@
 object NewForm: TNewForm
-  Left = 704
+  Left = 366
   Height = 240
-  Top = 259
+  Top = 173
   Width = 320
   Caption = 'New'
   ClientHeight = 240

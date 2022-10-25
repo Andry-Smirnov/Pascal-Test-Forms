@@ -1,7 +1,7 @@
 object New2Form: TNew2Form
-  Left = 425
+  Left = 265
   Height = 240
-  Top = 245
+  Top = 302
   Width = 320
   Anchors = [akRight, akBottom]
   Caption = 'New2'
