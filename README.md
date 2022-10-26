@@ -13,7 +13,7 @@ In the example project file I called it `MainForm`
 FormStyle = fsNormal
 ```
 
-Call `Form2` with `Form2.Show; // do not use ShowModal`.
+Call `Form2` with `Form2.Show` do not use `ShowModal`.
 
 ### `Form2`
 
