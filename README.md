@@ -1,7 +1,7 @@
 # Pascal-Test-Forms
 Тестирование различных сочетаний свойств главной и дочерней формы. Исходный код для Delphi и Lazarus, кроссплатформенная компиляция
 
-## [[SOLVED] FormStyle=fsStayOnTop makes form unresponsive](https://forum.lazarus.freepascal.org/index.php?topic=42560.0)
+## [[SOLVED] `FormStyle=fsStayOnTop` makes form unresponsive](https://forum.lazarus.freepascal.org/index.php?topic=42560.0)
 
 For others running into issues like this (for this example anyway).
 
