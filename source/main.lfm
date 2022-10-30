@@ -7,6 +7,7 @@ object MainForm: TMainForm
   Caption = 'Main'
   ClientHeight = 328
   ClientWidth = 479
+  OnShow = FormShow
   LCLVersion = '2.2.4.0'
   object ExitButton: TButton
     Left = 384
@@ -57,5 +58,13 @@ object MainForm: TMainForm
     Caption = 'Show Modal 2'
     OnClick = ShowModalFormButton1Click
     TabOrder = 4
+  end
+  object LCLLabel: TLabel
+    Left = 95
+    Height = 16
+    Top = 94
+    Width = 31
+    Caption = 'LCL: '
+    ParentColor = False
   end
 end

@@ -21,6 +21,9 @@ uses
     {$IF defined(Unix)}
     {$IFEND}
   {$IFEND}
+{$IFDEF FPC}
+  LazVersion,
+{$ENDIF}
 //  Windows,
 //  Messages,
   SysUtils,
@@ -39,6 +42,7 @@ type
   { TMainForm }
 
   TMainForm = class(TForm)
+    LCLLabel: TLabel;
     ShowFormButton: TButton;
     ExitButton: TButton;
     ShowModalButton: TButton;
@@ -47,6 +51,7 @@ type
     ShowModalFormButton1: TButton;
 
     procedure ExitButtonClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure ShowFormButton1Click(Sender: TObject);
     procedure ShowFormButtonClick(Sender: TObject);
     procedure ShowModalFormButton1Click(Sender: TObject);
@@ -78,6 +83,13 @@ uses
 procedure TMainForm.ExitButtonClick(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TMainForm.FormShow(Sender: TObject);
+begin
+{$IFDEF FPC}
+  LCLLabel.Caption := 'Lazarus v.' + laz_version;
+{$ENDIF}
 end;
 
 procedure TMainForm.ShowFormButton1Click(Sender: TObject);
