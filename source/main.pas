@@ -16,11 +16,6 @@ interface
 
 
 uses
-  {$IF defined(Win32) or defined(Win64)}
-  {$ELSE}
-    {$IF defined(Unix)}
-    {$IFEND}
-  {$IFEND}
 {$IFDEF FPC}
   LazVersion,
 {$ENDIF}

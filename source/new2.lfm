@@ -9,12 +9,13 @@ object New2Form: TNew2Form
   ClientWidth = 320
   FormStyle = fsStayOnTop
   PopupMode = pmAuto
-  LCLVersion = '2.2.4.0'
+  LCLVersion = '2.0.10.0'
   object CloseButton: TButton
     Left = 232
     Height = 25
     Top = 200
     Width = 75
+    Anchors = [akRight, akBottom]
     Caption = 'Close'
     OnClick = CloseButtonClick
     TabOrder = 0

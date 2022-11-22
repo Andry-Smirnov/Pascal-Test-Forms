@@ -8,7 +8,7 @@ object MainForm: TMainForm
   ClientHeight = 328
   ClientWidth = 479
   OnShow = FormShow
-  LCLVersion = '2.2.4.0'
+  LCLVersion = '2.0.10.0'
   object ExitButton: TButton
     Left = 384
     Height = 25
@@ -61,9 +61,9 @@ object MainForm: TMainForm
   end
   object LCLLabel: TLabel
     Left = 95
-    Height = 16
+    Height = 17
     Top = 94
-    Width = 31
+    Width = 27
     Caption = 'LCL: '
     ParentColor = False
   end

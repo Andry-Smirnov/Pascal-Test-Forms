@@ -18,7 +18,6 @@ uses
 {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms,
-
   Main, {MainForm}
   New,  {NewForm}
   New2  {New2Form}
