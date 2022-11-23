@@ -6,6 +6,7 @@ object NewForm: TNewForm
   Caption = 'New'
   ClientHeight = 240
   ClientWidth = 320
+  OnClose = FormClose
   PopupMode = pmExplicit
   PopupParent = MainForm.Owner
   LCLVersion = '2.2.4.0'

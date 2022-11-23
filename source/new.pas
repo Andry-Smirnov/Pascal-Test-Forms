@@ -38,6 +38,7 @@ type
     ShowModalFormButton: TButton;
 
     procedure CloseButtonClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormDeactivate(Sender: TObject);
     procedure ShowFormButtonClick(Sender: TObject);
     procedure ShowModalFormButtonClick(Sender: TObject);
@@ -67,6 +68,12 @@ uses
 procedure TNewForm.CloseButtonClick(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TNewForm.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+  if New2Form.Showing then
+    New2Form.Close;
 end;
 
 
