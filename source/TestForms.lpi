@@ -23,7 +23,8 @@
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
-      <MinorVersionNr Value="1"/>
+      <MinorVersionNr Value="2"/>
+      <StringTable Comments="FPC Form Tester" CompanyName="SKB PSIS" FileDescription="FPC Form Tester" OriginalFilename="TestForms" ProductName="FPC Form Tester"/>
     </VersionInfo>
     <BuildModes Count="3">
       <Item1 Name="Default" Default="True"/>

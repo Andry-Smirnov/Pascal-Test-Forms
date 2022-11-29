@@ -25,7 +25,8 @@ uses
   Controls,
   Forms,
   Dialogs,
-  StdCtrls;
+  StdCtrls,
+  ExtCtrls;
 
 
 type
@@ -33,15 +34,20 @@ type
   { TNewForm }
 
   TNewForm = class(TForm)
+    Bevel2: TBevel;
     CloseButton: TButton;
-    ShowFormButton: TButton;
-    ShowModalFormButton: TButton;
+    GroupBox1: TGroupBox;
+    ShowModalNew2FormButton: TButton;
+    ShowModalOnTopNew2FormButton: TButton;
+    ShowNew2FormButton: TButton;
+    ShowOnTopNew2FormButton: TButton;
 
     procedure CloseButtonClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
-    procedure FormDeactivate(Sender: TObject);
-    procedure ShowFormButtonClick(Sender: TObject);
-    procedure ShowModalFormButtonClick(Sender: TObject);
+    procedure ShowModalNew2FormButtonClick(Sender: TObject);
+    procedure ShowModalOnTopNew2FormButtonClick(Sender: TObject);
+    procedure ShowNew2FormButtonClick(Sender: TObject);
+    procedure ShowOnTopNew2FormButtonClick(Sender: TObject);
   private
   public
   end;
@@ -70,30 +76,52 @@ begin
   Close;
 end;
 
+
 procedure TNewForm.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
   if New2Form.Showing then
     New2Form.Close;
+  CloseAction := caHide;
 end;
 
 
-procedure TNewForm.FormDeactivate(Sender: TObject);
-begin
-  if Showing then
-    SetFocus;
-end;
-
-
-procedure TNewForm.ShowFormButtonClick(Sender: TObject);
-begin
-  New2Form.Show;
-end;
-
-
-procedure TNewForm.ShowModalFormButtonClick(Sender: TObject);
+procedure TNewForm.ShowModalNew2FormButtonClick(Sender: TObject);
 begin
   if not New2Form.Showing then
-    New2Form.ShowModal;
+    begin
+      New2Form.FormStyle := fsNormal;
+      New2Form.ShowModal;
+    end;
+end;
+
+
+procedure TNewForm.ShowModalOnTopNew2FormButtonClick(Sender: TObject);
+begin
+  if not New2Form.Showing then
+    begin
+      New2Form.FormStyle := fsStayOnTop;
+      New2Form.ShowModal;
+    end;
+end;
+
+
+procedure TNewForm.ShowNew2FormButtonClick(Sender: TObject);
+begin
+  if not New2Form.Showing then
+    begin
+      New2Form.FormStyle := fsNormal;
+      New2Form.Show;
+    end;
+end;
+
+
+procedure TNewForm.ShowOnTopNew2FormButtonClick(Sender: TObject);
+begin
+  if not New2Form.Showing then
+    begin
+      New2Form.FormStyle := fsStayOnTop;
+      New2Form.Show;
+    end;
 end;
 
 
